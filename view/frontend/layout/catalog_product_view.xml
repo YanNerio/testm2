@@ -1,0 +1,15 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Yannerio_Calculadora::css/bootstrap4/bootstrap.css" />
+        <!-- <css src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  src_type="url" /> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" src_type="url" /> -->
+        <!-- <css src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" src_type="url" /> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" src_type="url" /> -->
+        
+    </head>
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="Yannerio\Calculadora\Block\Catalog\Product\View\Calculadora" name="calculadora" as="calculadora" after="product.info.price" template="Yannerio_Calculadora::catalog/product/view/calculadora.phtml" />
+        </referenceContainer>
+    </body>
+</page>

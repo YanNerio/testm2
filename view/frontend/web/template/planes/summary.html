@@ -1,0 +1,30 @@
+<div class="component-wrapper planes">
+    <div class="row detalles">
+        <div class='title-custom' data-bind="text: 'Detalle del Plan'"></div>
+        <div class="title-custom2"><b>Plazos: </b>  <spam class="title-custom2" data-bind="html: getPlazo()"></span></div>
+       
+        <div class="title-custom2"><b>Tasa interes : </b> <span class="title-custom2" data-bind="html: getInteres()"></span>%</div>
+        
+        <div class="title-custom2"><b>Cuota: </b> <span class="title-custom2" data-bind="html: getCuota()"></span></div>
+        
+        <div class="title-custom2"><b>Monto total: </b> <span class="title-custom2" data-bind="html: getMonto()"></span></div>
+        
+    </div>
+</div>
+
+<style>
+    .title-custom{
+        padding-bottom: 10px;
+        color: #333333;
+        font-weight: 300;
+        font-size: 2.6rem;
+        border-bottom: 1px solid #cfcfcf;
+    }
+    .title-custom2{
+        padding: 10px;
+    }
+    .detalles {
+        background: #f5f5f5;
+        margin: 0 0 20px;
+    }
+</style>

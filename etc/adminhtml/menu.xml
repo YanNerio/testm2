@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add 
+            id="Yannerio_Calculadora::manager" 
+            title="Baum Test" 
+            module="Yannerio_Calculadora" 
+            sortOrder="10" 
+            resource="Yannerio_Calculadora::manager" />
+        <add 
+            id="Yannerio_Calculadora::add_row" 
+            title="Planes" 
+            module="Yannerio_Calculadora" 
+            sortOrder="20" 
+            parent="Yannerio_Calculadora::manager" 
+            action="grid/grid" 
+            resource="Yannerio_Calculadora::add_row"/>
+        <add 
+            id="Yannerio_Calculadora::plan_configuration" 
+            title="Configuracion" 
+            module="Yannerio_Calculadora" 
+            sortOrder="99" 
+            parent="Yannerio_Calculadora::add_row" 
+            action="adminhtml/system_config/edit/section/configuration" 
+            resource="Yannerio_Calculadora::plan_configuration"/>
+    </menu>
+</config>
